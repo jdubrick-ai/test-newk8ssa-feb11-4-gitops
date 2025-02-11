@@ -1,0 +1,12 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: test-newk8ssa-feb11-4-dsp-job-rolebinding
+subjects:
+  - kind: ServiceAccount
+    name: test-newk8ssa-feb11-4-dsp-job
+    namespace: rhdh-app
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: test-newk8ssa-feb11-4-dsp-job-role

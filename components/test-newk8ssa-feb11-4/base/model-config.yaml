@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-newk8ssa-feb11-4-model-config
+data:
+  MODEL_ENDPOINT: "http://test-newk8ssa-feb11-4-model-server:8001"
